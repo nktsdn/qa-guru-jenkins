@@ -18,6 +18,7 @@ public class TestBase {
         //Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy="eager"; //не ждем полной загрузки страницы
+        Configuration.remote = "http://0.0.0.0:4444"; //удаленный selenoid (в докер контейнере)
     }
 
     @BeforeEach
