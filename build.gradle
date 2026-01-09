@@ -8,13 +8,13 @@ version = '1.0-SNAPSHOT'
 
 allure {
     report{
-        version.set("2.34.1")
+        version.set("2.32.0")
     }
     adapter { //отвечает за каталог build/allure-results
         aspectjWeaver.set(true) //обработка аннотации @Step
         frameworks {
             junit5 { //название фреймворка
-                adapterVersion.set("2.29.1")
+                adapterVersion.set("2.32.0")
             }
         }
     }
@@ -29,13 +29,13 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation (
             'org.junit.jupiter:junit-jupiter',
-            'com.codeborne:selenide:7.9.4',
+            'com.codeborne:selenide:7.13.0',
             'org.slf4j:slf4j-simple:2.0.17',
             'org.apache.commons:commons-lang3:3.18.0',
             'org.assertj:assertj-core:3.27.3',
             'com.opencsv:opencsv:5.11.2',
             'com.google.code.gson:gson:2.13.1',
-            'io.qameta.allure:allure-selenide:2.29.1',
+            'io.qameta.allure:allure-selenide:2.32.0',
             'org.aspectj:aspectjweaver:1.9.24'
     )
 }
